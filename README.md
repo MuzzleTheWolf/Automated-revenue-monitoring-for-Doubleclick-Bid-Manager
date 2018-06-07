@@ -13,7 +13,12 @@ A program used to query DBM hourly for reports regarding revenues of existing ad
 * update SheetName and SheetLink variables in main.py with correct values for your spreadsheet.
 * update Request_Body to fit your request. The FILTER_PARTNER variable is especially important.
 
+## Running the program
+Run start.sh. The program will automatically run every hour.
 
+## Top-level execution description
+* start.sh activates script.sh every hour
+* script.sh creates seperate directories each day for log files of each execution of main.py. It also deletes any logs more than one week old 
 
 
 
