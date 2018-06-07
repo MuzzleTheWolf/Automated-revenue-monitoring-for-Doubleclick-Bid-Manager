@@ -19,8 +19,8 @@ Run start.sh. The program will automatically run every hour.
 ## Top-level execution description
 * start.sh activates script.sh every hour
 * ### script.sh:
-** creates seperate directories each day for log files of each execution of main.py. 
-** It also deletes any logs more than one week old. Runs main.py.
+..* creates seperate directories each day for log files of each execution of main.py. 
+..* It also deletes any logs more than one week old. Runs main.py.
 
 
 
