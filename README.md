@@ -11,7 +11,7 @@ A program used to query DBM hourly for reports regarding revenues of existing ad
 ## Install:
 * pip install -r requirements.txt
 * update SheetName and SheetLink variables in main.py with correct values for your spreadsheet.
-* update Request_Body to fit your request. Especially important is the FILTER_PARTNER variable.
+* update Request_Body to fit your request. The FILTER_PARTNER variable is especially important.
 
 
 
