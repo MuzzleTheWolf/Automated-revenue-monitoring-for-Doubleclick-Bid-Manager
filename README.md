@@ -9,9 +9,9 @@ A program used to query DBM hourly for reports regarding revenues of existing ad
 * Sendgrid account .json file (sendgrid.json)
 
 ## Install:
-pip install -r requirements.txt
-update SheetName and SheetLink variables in main.py with correct values for your spreadsheet.
-update Request_Body to fit your request. Especially important is the FILTER_PARTNER variable.
+* pip install -r requirements.txt
+* update SheetName and SheetLink variables in main.py with correct values for your spreadsheet.
+* update Request_Body to fit your request. Especially important is the FILTER_PARTNER variable.
 
 
 
