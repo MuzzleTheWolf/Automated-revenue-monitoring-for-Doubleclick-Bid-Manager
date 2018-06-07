@@ -8,8 +8,10 @@ A program used to query DBM hourly for reports regarding revenues of existing ad
 * Google service account .json file with API access enabled for Sheets and DBM (renamed to client_secret.json)
 * Sendgrid account .json file (sendgrid.json)
 
-## pip install:
+## Install:
 pip install -r requirements.txt
+update SheetName and SheetLink variables in main.py with correct values for your spreadsheet.
+update Request_Body to fit your request. Especially important is the FILTER_PARTNER variable.
 
 
 
