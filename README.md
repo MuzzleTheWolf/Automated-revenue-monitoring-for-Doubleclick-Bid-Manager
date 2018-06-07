@@ -16,12 +16,22 @@ A program used to query DBM hourly for reports regarding revenues of existing ad
 ## Running the program
 Run start.sh. The program will automatically run every hour.
 
-## Top-level execution description
-* start.sh activates script.sh every hour
-* ### script.sh:
-  * creates seperate directories each day for log files of each execution of main.py. 
-  * It also deletes any logs more than one week old. Runs main.py.
-
+## Top-level description of execution
+* start.sh activates script.sh every hour.
+* script.sh:
+  * Creates seperate directories each day for log files of each execution of main.py. Deletes any logs more than one week old.
+  * Runs main.py.
+  * If main.py exits with an error runs Email_Error.py
+* main.py:
+  * Sends query and downloads report using DBM API.
+  * Calculates hourly revenue for each advertiser by subtracting values from previous report.
+  * Formats data from report into a dictionary of Advertiser objects. 
+  * Updates spreadsheet with any new Advertisers.
+  * Gets projected values and Emails from spreadsheet.
+  * Makes a list of Advertiser objects which have exceeded hourly or daily budget projections.
+  * Formats and sends Emails with Warnings about exceeded budgets.
+* Email_Error.py:
+  * Reads latest log file and sends it by Email to addresses in Service_Emails variable in main.py.
 
 
 
